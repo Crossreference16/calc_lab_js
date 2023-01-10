@@ -1,25 +1,31 @@
-const sum = function(a, b){
-    return a + b;
-};
+const Calculator = function(){
+    this.add = function(number1, number2){
+        return number1 + number2;
+    }
+    this.subtract = function(number1, number2){
+        return number1 - number2;
+    }
+    this.multiply = function(number1, number2){
+        return number1 * number2;
+    }
+    this.divide = function(number1, number2){
+        return number1/number2;
+    }
+    this.modulus = function(number) {
+        return Math.abs(number);
+    }
+    this.even = function(){
 
-const subtract = null;
+    }
+    this.odd = function(){
 
-const multiply = null;
+    }
+}
 
-const divide = null;
+// this.multiply = null;
+// this.divide = null;
+// this.even = null;
+// this.ode= null;
+// this.subtract = null;
 
-const modulus = null;
-
-const even = null;
-
-const odd = null;
-
-module.exports = { 
-    sum, 
-    subtract, 
-    multiply, 
-    divide, 
-    modulus, 
-    even, 
-    odd 
-};
+module.exports = {Calculator};
